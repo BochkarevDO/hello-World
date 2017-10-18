@@ -1,0 +1,6 @@
+#Сгенерировать пароль:
+from string import ascii_letters, digits
+from random import choice
+chars = ascii_letters + digits
+n = int(input())                    # длина пароля
+''.join(choice(chars) for _ in range(n))
